@@ -1,6 +1,6 @@
 import * as Cesium from "cesium";
 const createEntity = (cesium, x, y) => {
-  const heading = Cesium.Math.toRadians(10);
+  const heading = Cesium.Math.toRadians(100);
   const pitch = 0;
   const roll = 0;
   const hpr = new Cesium.HeadingPitchRoll(heading, pitch, roll);
@@ -19,7 +19,9 @@ const createEntity = (cesium, x, y) => {
       },
     };
     
-    cesium.viewer.entities.add(entity);
+    
+    // Rotate the entity to face north
+  return cesium.viewer.entities.add(entity);
 };
 
 export default createEntity;

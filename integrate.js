@@ -3,6 +3,7 @@ import { ION_TOKEN } from "./utils/token";
 import * as Cesium from "cesium";
 import init3DObject from "./utils/init3DObject";
 import measureDistance from "./utils/measureDistance";
+import rotateEntity from "./utils/rotation/rotateEntity";
 
 Cesium.Ion.defaultAccessToken = ION_TOKEN;
 
@@ -45,6 +46,6 @@ cesium.viewer.scene.camera.setView(options);
 // const osmBuildingsTileset = await Cesium.createOsmBuildingsAsync();
 // cesium.viewer.scene.primitives.add(osmBuildingsTileset);
 
-// init3DObject(cesium);
 
-measureDistance(cesium);
+init3DObject(cesium);
+// measureDistance(cesium);
